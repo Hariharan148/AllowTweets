@@ -4,7 +4,6 @@ const axios = require('axios');
 const { OAuth2Client } = require('google-auth-library');
 
 const serviceAccount = require('./serviceAccountKey.json');
-const keys = require('./oauth2.keys.json'); // Your OAuth2 keys file
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
